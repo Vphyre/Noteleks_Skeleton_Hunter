@@ -5,32 +5,10 @@ using System.Collections.Generic;
 /// </summary>
 public class Pooling : MonoBehaviour
 {
-	/**
-	* Object to be copied
-	*/
-	[SerializeField]
-	private GameObject _pooledObject = null;
-
-	/**
-	* Initial size of the pool
-	*/
-	[SerializeField]
-	private int _initialPoolSize = 10;
-
-	/**
-	* Maximum size of the pool
-	*/
-	[SerializeField]
-	private int _maxPoolSize = 50;
-
-	/**
-	* Can the pool grow if no inactive gameObjects is found?
-	*/
-	[SerializeField]
-	private bool _canGrow = true;
-	/**
-	* List of gameObjects
-	*/
+	[SerializeField] private GameObject _pooledObject = null;
+	[SerializeField] private int _initialPoolSize = 10;
+	[SerializeField] private int _maxPoolSize = 50;
+	[SerializeField] private bool _canGrow = true;
 	private List<GameObject> _pool;
 
 	public List<GameObject> pool
@@ -47,26 +25,26 @@ public class Pooling : MonoBehaviour
 		//Initialing the pool
 		_pool = new List<GameObject> ();
 
-		for (int i = 0; i < _initialPoolSize; i++) {
+		for (int i = 0; i < _initialPoolSize; i++)
+		{
 			InstantiateGameObject ();
 		}
 	}
-
+	/// <summary>
+	/// Returns a disabled gameObject in the pool and create a new gameObject if is necessary.
+	/// </summary>
+	/// <returns></returns>
 	public GameObject GetPooledObject()
 	{
-		// Check for any disabled gameObject and returns it
-		for (int i = 0; i < _pool.Count; i++) {
+		for (int i = 0; i < _pool.Count; i++)
+		{
 			if (!_pool [i].activeInHierarchy)
 				return _pool [i];
 		}
-
-		// Otherwise, if there is no object available and the pool can grow, create a new one and add to the pool
 		if (_canGrow && _pool.Count < _maxPoolSize) 
 		{
 			return InstantiateGameObject();
 		}
-
-		// In case the pool can no longer grow and there is no available gameObject, return null
 		return null;
 	}
 	private GameObject InstantiateGameObject()

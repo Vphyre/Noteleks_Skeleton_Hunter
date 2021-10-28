@@ -1,0 +1,8 @@
+.vs
+Library
+Temp
+*.apk
+Assembly-CSharp-Editor.csproj Assembly-CSharp.csproj
+Noteleks - The Skeleton Hunter.sln
+/build
+/.vscode

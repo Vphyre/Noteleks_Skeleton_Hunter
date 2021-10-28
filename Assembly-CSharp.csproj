@@ -48,7 +48,7 @@
      <Compile Include="Assets\ThirdParyAssets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
      <Compile Include="Assets\ThirdParyAssets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
      <Compile Include="Assets\Scripts\Items\Heart.cs" />
-     <Compile Include="Assets\Scripts\UI.cs" />
+     <Compile Include="Assets\Scripts\General\UI.cs" />
      <Compile Include="Assets\ThirdParyAssets\Particle Ribbon by Moonflower Carnivore\Scripts\rotation.cs" />
      <Compile Include="Assets\Scripts\Weapons\ArrowBehaviour.cs" />
      <Compile Include="Assets\Scripts\Items\Arrows.cs" />
@@ -60,15 +60,16 @@
      <Compile Include="Assets\ThirdParyAssets\StarterAssets\FirstPersonController\Scripts\BasicRigidBodyPush.cs" />
      <Compile Include="Assets\Scripts\Weapons\BowBehaviour.cs" />
      <Compile Include="Assets\ThirdParyAssets\StarterAssets\TutorialInfo\Scripts\Readme.cs" />
-     <Compile Include="Assets\Scripts\Pooling.cs" />
+     <Compile Include="Assets\Scripts\General\Pooling.cs" />
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
      <Compile Include="Assets\Scripts\Weapons\MeleeWeapon.cs" />
-     <Compile Include="Assets\Scripts\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\General\PlayerStats.cs" />
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\ThirdParyAssets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
      <Compile Include="Assets\Scripts\Items\Points.cs" />
+     <Compile Include="Assets\Scripts\General\Menu.cs" />
      <Compile Include="Assets\Scripts\Items\Item.cs" />
      <Compile Include="Assets\ThirdParyAssets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -78,7 +79,7 @@
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
      <Compile Include="Assets\Scripts\Weapons\Fire.cs" />
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-     <Compile Include="Assets\Scripts\PlayerManager.cs" />
+     <Compile Include="Assets\Scripts\General\PlayerManager.cs" />
      <Compile Include="Assets\ThirdParyAssets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
@@ -90,6 +91,7 @@
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+     <Compile Include="Assets\Scripts\General\Spawner.cs" />
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
@@ -98,8 +100,6 @@
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\ThirdParyAssets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-     <Compile Include="Assets\Scripts\Spawner.cs" />
-     <Compile Include="Assets\Scripts\Menu.cs" />
      <None Include="Assets\ThirdParyAssets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\ThirdParyAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\ThirdParyAssets\Particle Ribbon by Moonflower Carnivore\readme_Simple_Particle_Ribbon.txt" />
