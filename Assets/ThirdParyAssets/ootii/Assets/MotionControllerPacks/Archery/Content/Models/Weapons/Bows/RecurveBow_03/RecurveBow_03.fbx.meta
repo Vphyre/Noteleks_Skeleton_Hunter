@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: fbb8e5db2afe59b47a46003bdc314d70
+timeCreated: 1458676544
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bow
+    100004: joint1
+    100006: joint10
+    100008: joint11
+    100010: joint12
+    100012: joint13
+    100014: joint14
+    100016: joint2
+    100018: joint3
+    100020: joint4
+    100022: joint5
+    100024: joint6
+    100026: joint7
+    100028: joint8
+    100030: joint9
+    100032: Lower1
+    100034: Lower2
+    100036: Lower3
+    100038: Lower4
+    100040: Lower5
+    100042: Lower6
+    100044: Root
+    100046: String
+    100048: Upper1
+    100050: Upper2
+    100052: Upper3
+    100054: Upper4
+    100056: Upper5
+    100058: Upper6
+    100060: notch
+    100062: root
+    100064: lower1
+    100066: lower2
+    100068: lower3
+    100070: lower4
+    100072: lower5
+    100074: lower6
+    100076: lower7
+    100078: upper1
+    100080: upper2
+    100082: upper3
+    100084: upper4
+    100086: upper5
+    100088: upper6
+    100090: upper7
+    100092: nock
+    400000: //RootNode
+    400002: Bow
+    400004: joint1
+    400006: joint10
+    400008: joint11
+    400010: joint12
+    400012: joint13
+    400014: joint14
+    400016: joint2
+    400018: joint3
+    400020: joint4
+    400022: joint5
+    400024: joint6
+    400026: joint7
+    400028: joint8
+    400030: joint9
+    400032: Lower1
+    400034: Lower2
+    400036: Lower3
+    400038: Lower4
+    400040: Lower5
+    400042: Lower6
+    400044: Root
+    400046: String
+    400048: Upper1
+    400050: Upper2
+    400052: Upper3
+    400054: Upper4
+    400056: Upper5
+    400058: Upper6
+    400060: notch
+    400062: root
+    400064: lower1
+    400066: lower2
+    400068: lower3
+    400070: lower4
+    400072: lower5
+    400074: lower6
+    400076: lower7
+    400078: upper1
+    400080: upper2
+    400082: upper3
+    400084: upper4
+    400086: upper5
+    400088: upper6
+    400090: upper7
+    400092: nock
+    2300000: //RootNode
+    2300002: Bow
+    3300000: //RootNode
+    3300002: Bow
+    4300000: Bow
+    9500000: //RootNode
+    13700000: Bow
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
