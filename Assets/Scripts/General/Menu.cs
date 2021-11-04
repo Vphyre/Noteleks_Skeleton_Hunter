@@ -21,10 +21,6 @@ public class Menu : MonoBehaviour
     {
         
     }
-    public void LoadingScene()
-    {
-        SceneManager.LoadScene(sceneName);
-    }
     public void QuitGame()
     {
         Application.Quit();
@@ -41,6 +37,5 @@ public class Menu : MonoBehaviour
         }
         PlayerPrefs.SetInt("LastTime", int.Parse(time.text)); 
         PlayerPrefs.SetInt("InitialCount", int.Parse(initialCount.text));     
-        // LoadingScene();
     }
 }
