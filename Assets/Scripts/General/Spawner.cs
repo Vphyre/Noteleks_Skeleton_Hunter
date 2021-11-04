@@ -11,8 +11,6 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Pooling meleePool;
     private List<GameObject> enemies = new List<GameObject>();
 
-
-    // Start is called before the first frame update
     void Start()
     {
         // Min enemy amount
@@ -25,7 +23,7 @@ public class Spawner : MonoBehaviour
         {
             enemyWaveAmount = 30;
         }
-        InvokeRepeating("Respawn", 3.1f, timeToRespawn);
+        InvokeRepeating("Respawn", UI.instance._initialCount, timeToRespawn);
     }
 
     private int GetQtdEnemiesDead()
@@ -66,7 +64,6 @@ public class Spawner : MonoBehaviour
                 enemy.GetComponent<Enemy>().Spawn(rangedPlaces[sortPos].position);
                 enemies.Add(enemy);
             }
-            Debug.Log(enemies.Count);
         }
     }
 }

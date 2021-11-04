@@ -34,22 +34,24 @@ public class BowBehaviour : MonoBehaviour
     }
     private void BowAttack()
     {
-        if(Input.GetMouseButtonDown(0) && currentFireRate>fireRate)
+        if(Input.GetMouseButton(0) && currentFireRate>fireRate && currentTimePrepareBow<maxHoldingTime)
         {
             bowRope.SetBool("Prepare", true);
             bowRope.SetBool("Shoot", false);
-            if(currentTimePrepareBow<maxHoldingTime)
-            {
-                currentTimePrepareBow += Time.deltaTime;
-            }
+            currentTimePrepareBow += Time.deltaTime;
+            print(currentTimePrepareBow);
         }
-        if(Input.GetMouseButtonUp(0) && currentFireRate > fireRate)
+        else if(Input.GetMouseButton(0))
+        {
+            bowRope.SetBool("Prepare", false);
+            bowRope.SetBool("Shoot", false);
+        }
+        if(Input.GetMouseButtonUp(0) && currentFireRate > fireRate && currentTimePrepareBow > 0)
         {
             ShootArrow();
             currentTimePrepareBow = 0;
             currentFireRate = 0f;
         }
-
         if(currentFireRate > fireRate && arrow != null && PlayerStats.playerStats._arrows > 0)
         {
             SpawnArrow();

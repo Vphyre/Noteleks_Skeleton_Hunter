@@ -5,7 +5,14 @@ using UnityEngine.SceneManagement;
 public class UI : MonoBehaviour
 {
     [SerializeField] private float timeInMinutes;
+    [SerializeField] private int initialCount;
+    public int _initialCount
+    {
+        get{return this.initialCount;}
+        set{this.initialCount = value;}
+    }
     [SerializeField] private Text time;
+    [SerializeField] private Text initialCountText;
     [SerializeField] private Text life;
     [SerializeField] private Text arrows;
     [SerializeField] private Text points;
@@ -14,6 +21,7 @@ public class UI : MonoBehaviour
     [SerializeField] private GameObject gameOverScreen;
     [SerializeField] private GameObject winScreen;
     [SerializeField] private GameObject pauseScreen;
+    [SerializeField] private GameObject initialCountScreen;
     private bool gameOverTrigger =  false;
     private bool pauseTrigger = false;
     private bool winTrigger = false;
@@ -25,15 +33,22 @@ public class UI : MonoBehaviour
     public static UI instance;
     void Awake()
     {
-        if(PlayerPrefs.GetInt("LastTime")>0)
+        Cursor.lockState = CursorLockMode.Locked;
+        if(PlayerPrefs.GetInt("LastTime") > 0)
         {
             timeInMinutes = PlayerPrefs.GetInt("LastTime");
+        }
+        if(PlayerPrefs.GetInt("InitialCount") > 0)
+        {
+            initialCount = PlayerPrefs.GetInt("InitialCount");
         }
         timeInMinutes = timeInMinutes*60f;
         instance = this;
         gameOverScreen.SetActive(false);
         pauseScreen.SetActive(false);
         winScreen.SetActive(false);
+        initialCountScreen.SetActive(true);
+        InvokeRepeating("InitialTime",0,1f);
     }
     void Update()
     {
@@ -116,5 +131,16 @@ public class UI : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+    }
+    private void InitialTime()
+    {
+        initialCountText.text = _initialCount.ToString();
+        if(initialCount <= 0)
+        {
+            CancelInvoke("InitialTime");
+            initialCountScreen.SetActive(false);
+        }
+        _initialCount -= 1;
+        print(initialCount);
     }
 }
